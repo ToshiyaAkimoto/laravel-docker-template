@@ -12,7 +12,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $this->call([
-            TodoSeeder::class,
+            TodoSeeder::class,//DBとの連携テスト用
         ]);
     }
 }
