@@ -28,7 +28,7 @@
         <div class="row justify-content-center">
           <div class="col-md-8">
             <p class="text-left">
-              <a class="btn btn-success" href="">ToDoを追加</a>
+              <a class="btn btn-success" href="http://localhost:8080/todo/create">ToDoを追加</a>
             </p>
             <div class="card">
               <div class="card-header">
@@ -37,7 +37,7 @@
               <div class="list-group list-group-flush">
                 @foreach ($todoList as $todo)
                   <div class="d-flex align-items-center p-2">
-                    <span class="col-9">{{ $todo->content }}</span><!--{{ }}で囲うことで、PHPの処理として認識される-->
+                    <span class="col-9">{{ $todo->content }}</span>
                   </div>
                 @endforeach <!--「@」はディレクティブ 一般的なPHPの制御構文の便利な短縮記述方法を提供してくれる-->
               </div>
