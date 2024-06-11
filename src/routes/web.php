@@ -11,10 +11,9 @@
 |
 */
 
+//URLのパスが第一引数の時、第二引数を実行する
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/todo', function () {
-    echo 'Hello World!';
-});
+Route::get('/todo', 'TodoController@index');

@@ -30,3 +30,6 @@ class CreateTodosTable extends Migration
         Schema::dropIfExists('todos');
     }
 }
+//マイグレーションファイルを使うことで、学習リソースの削減と作業状況の共有が楽になる！
+//・SQLを知らなくてもPHPでテーブル操作ができる！
+//・マイグレーションファイルをGitで共有することで、開発者全員が同じテーブルを作成することができる！
