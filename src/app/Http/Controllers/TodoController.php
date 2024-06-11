@@ -13,6 +13,7 @@ class TodoController extends Controller
         $todo = new Todo();//クラスを実行(TodoはApp\Todoにある) todosテーブルを使用する
         $todoList = $todo->all();//DBのtodosテーブル内のデータを取得
 
-        return view('todo.index');//view('todo.index') は resources/views/ に配置されている index.blade.php のことを指している
+        return view('todo.index', ['todoList' => $todoList]);//view('todo.index') は resources/views/ に配置されている index.blade.php のことを指している
+    //view関数の第二引数の連想配列は、[blade内での変数名 => 代入したい値]を意味します。
     }
 }
