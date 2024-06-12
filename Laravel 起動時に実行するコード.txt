@@ -19,4 +19,4 @@ docker-compose exec app bash
 mkdir C:\Users\banga\Desktop\GizTech作業\Laravel
 git clone https://github.com/ToshiyaAkimoto/laravel-docker-template.git .
 
-git commit -m 'add:resources/views/todo/create.blade.php を作成 feat:index.blade.phpに、Todoを追加ボタンを追加 feat:TodoController.phpに、create関数を追加'
+git commit -m 'add:resources/views/layouts/base.blade.phpを作成　feat:index.blade.phpのURL指定を名前付きルート化、routes/web.phpで名前付きルートを定義'

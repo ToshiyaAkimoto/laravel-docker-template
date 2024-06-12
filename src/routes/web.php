@@ -16,5 +16,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/todo', 'TodoController@index');
+Route::get('/todo', 'TodoController@index')->name('todo.index');
 Route::get('/todo/create', 'TodoController@create')->name('todo.create');//name()で名前付きルートを作成 これによって、index.blade.phpで指定しやすくなる
+Route::post('/todo', 'TodoController@store')->name('todo.store');
