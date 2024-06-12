@@ -1,0 +1,22 @@
+cd C:\Users\banga\Desktop\GizTech作業\Laravel
+docker-compose up -d
+docker-compose exec app chown -R www-data: storage bootstrap/cache
+git checkout origin develop/laravel_todo_app
+git commit -m ''
+
+左(DB)
+cd C:\Users\banga\Desktop\GizTech作業\Laravel
+docker-compose exec db bash
+mysql -u root -p
+secret
+
+右(app)
+cd C:\Users\banga\Desktop\GizTech作業\Laravel\src\app
+docker-compose exec app bash
+
+
+
+mkdir C:\Users\banga\Desktop\GizTech作業\Laravel
+git clone https://github.com/ToshiyaAkimoto/laravel-docker-template.git .
+
+git commit -m 'add:resources/views/todo/create.blade.php を作成 feat:index.blade.phpに、Todoを追加ボタンを追加 feat:TodoController.phpに、create関数を追加'
