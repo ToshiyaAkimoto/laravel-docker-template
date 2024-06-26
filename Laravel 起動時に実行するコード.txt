@@ -1,0 +1,22 @@
+cd C:\Users\banga\Desktop\GizTech作業\Laravel
+docker-compose up -d
+docker-compose exec app chown -R www-data: storage bootstrap/cache
+git checkout origin develop/laravel_todo_app
+git commit -m ''
+
+左(DB)
+cd C:\Users\banga\Desktop\GizTech作業\Laravel
+docker-compose exec db bash
+mysql -u root -p
+secret
+
+右(app)
+cd C:\Users\banga\Desktop\GizTech作業\Laravel\src\app
+docker-compose exec app bash
+
+
+
+mkdir C:\Users\banga\Desktop\GizTech作業\Laravel
+git clone https://github.com/ToshiyaAkimoto/laravel-docker-template.git .
+
+git commit -m 'add:resources/views/layouts/base.blade.phpを作成　feat:index.blade.phpのURL指定を名前付きルート化、routes/web.phpで名前付きルートを定義'
